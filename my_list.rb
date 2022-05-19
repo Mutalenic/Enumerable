@@ -1,4 +1,4 @@
-require './my_enumerable.rb'
+require_relative './my_enumerable'
 
 class MyList
   include MyEnumerable
@@ -7,7 +7,7 @@ class MyList
     @list = list
   end
 
-  def each
-    @list.each { |value| yield(value) }
+  def each(&block)
+    @list.each(&block)
   end
 end
