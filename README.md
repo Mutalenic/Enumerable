@@ -8,7 +8,38 @@ This project contain class MyList and a module MyEnumerable. The module MyEnumer
 
 ## Getting Started
 
-To start using this software you need to have Ruby installed in your machine
+To start using this software you need to have Git and Ruby installed in your machine
+
+in terminal:
+
+```
+-$ git clone git@github.com:Mutalenic/Enumerable.git
+
+```
+
+```
+-$ cd Enumerable
+
+```
+
+Add to my_list.rb the following code:
+
+```
+list = MyList.new(1, 2, 3, 4)
+
+# Test #all?
+puts(list.all? { |e| e < 5 })
+puts(list.all? { |e| e > 5 })
+
+# Test #any?
+puts(list.any? { |e| e == 2 })
+puts(list.any? { |e| e == 5 })
+
+# Test #filter
+puts(list.filter(&:even?))
+```
+Run the my_list.rb in IRB or use this command: ```-$ ruby my_list.rb```
+
 
 ## Authors
 
