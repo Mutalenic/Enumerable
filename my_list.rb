@@ -1,6 +1,13 @@
+require './my_enumerable.rb'
+
 class MyList
+  include MyEnumerable
+
+  def initialize(*list)
     @list = list
-    def eachvalue
-        @list.each { | value| yield(value) }
-    end
+  end
+
+  def my_each
+    @list.each { |value| yield(value) }
+  end
 end
