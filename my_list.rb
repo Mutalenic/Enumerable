@@ -7,7 +7,7 @@ class MyList
     @list = list
   end
 
-  def my_each
+  def each
     @list.each { |value| yield(value) }
   end
 end

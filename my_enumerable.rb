@@ -1,6 +1,6 @@
 module MyEnumerable
 
-  def my_all?
-    each { |item| true if yield item }
+  def all?
+    each { |item| return true if yield item }
   end
 end
