@@ -1,6 +1,10 @@
 # Enumerable
 
+This project contain class MyList and a module MyEnumerable. The module MyEnumerable is implementing a subset of the functionality of [Enumerable.](https://ruby-doc.org/core-3.0.0/Enumerable.html)
 
+## Built with
+
+- Ruby
 
 ## Getting Started
 
